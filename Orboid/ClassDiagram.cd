@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Dot">
+    <Position X="4.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIgAENARAhQEAggAEAAACAAEEAAAAAABCAAQgAg=</HashCode>
+      <FileName>Dot.hpp</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="particle" />
+      <Field Name="DotTexture" />
+      <Field Name="mScore" />
+      <Field Name="mRenderer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LTexture">
+    <Position X="8" Y="3" Width="1.5" />
+    <AssociationLine Name="mTexture" Type="SDL_Texture">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.673" Y="-0.846" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>QAAAAgAAECAABABAAwAAAAAAAAAAQAAAAAAAAQAAAAY=</HashCode>
+      <FileName>LTexture.hpp</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="mTexture" />
+      <Field Name="m_renderer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Paddle">
+    <Position X="15.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAQAIKFAAAAABAgBgCCAAAAAAAAEEgiAAAAAAAAAAA=</HashCode>
+      <FileName>Paddle.hpp</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="paddleTexture" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PaddleManager">
+    <Position X="12" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAoAABAAABAAEhBAiAEAAAAARSQAAACAEAAICAA=</HashCode>
+      <FileName>PaddleManager.hpp</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="paddleRed" />
+      <Field Name="paddleBlue" />
+      <Field Name="paddleRedTexture" />
+      <Field Name="paddleBlueTexture" />
+      <Field Name="mDot" />
+      <Field Name="mScratch" />
+      <Field Name="Manager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Particle">
+    <Position X="8" Y="9.5" Width="1.5" />
+    <AssociationLine Name="mLTexture_P" Type="LTexture">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.091" Y="0.443" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="mRedTexture" Type="LTexture">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.244" Y="0.997" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="mGreenTexture" Type="LTexture">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.984" Y="0.633" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="mBlueTexture" Type="LTexture">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.411" Y="1.591" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="mShimmerTexture" Type="LTexture">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.002" Y="2.818" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAgABAAQAgAACEAAAgAAIAAAIBAAAAAAgQAAAAAAAAg=</HashCode>
+      <FileName>Particle.hpp</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="mLTexture_P" />
+      <Field Name="mRedTexture" />
+      <Field Name="mGreenTexture" />
+      <Field Name="mBlueTexture" />
+      <Field Name="mShimmerTexture" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ShowMenuImage">
+    <Position X="10.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAUBBABVDAAgAgEAAAAEAAMAAAAAABDQDAAAI=</HashCode>
+      <FileName>ShowMenuImage.hpp</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="mTexture" />
+      <Field Name="m_renderer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Source">
+    <Position X="13.5" Y="7" Width="1.5" />
+    <AssociationLine Name="Renderer" Type="SDL_Renderer">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.189" Y="0.044" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAhEBAgAAAEAEAAAEAAAgAAAAAAKCAMCLCQAIYgA=</HashCode>
+      <FileName>Source.hpp</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Window" />
+      <Field Name="Renderer" />
+      <Field Name="screensurface" />
+      <Field Name="Music" />
+      <Field Name="background" />
+      <Field Name="Title" />
+      <Field Name="StartGame" />
+      <Field Name="DifficultyImage" />
+      <Field Name="StoryImage" />
+      <Field Name="FinalImage" />
+      <Field Name="menuImages" />
+      <Field Name="e" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="std::vector&lt;_Ty, _Alloc&gt;" Collapsed="true">
+    <Position X="16.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IUoEEIEqCLBMUEBAAKMIAgISAgUESAIAxQEwggAEAAI=</HashCode>
+      <FileName>c:\program files (x86)\microsoft visual studio 11.0\vc\include\vector</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Mix_Chunk" Collapsed="true">
+    <Position X="5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAACAAAgAAAAAAAAAAACAAA=</HashCode>
+      <FileName>c:\users\ajain\downloads\sdl\sdl2_mixer-2.0.1\include\sdl_mixer.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="SDL_Surface" Collapsed="true">
+    <Position X="16.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAIAEAAAAACQAAAAAACECAQAgAAAAAAAQ=</HashCode>
+      <FileName>c:\users\ajain\downloads\sdl\sdl2-2.0.5\include\sdl_surface.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="SDL_Renderer" Collapsed="true">
+    <Position X="5.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>c:\users\ajain\downloads\sdl\sdl2-2.0.5\include\sdl_render.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="SDL_Texture" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>c:\users\ajain\downloads\sdl\sdl2-2.0.5\include\sdl_render.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="Mix_Music" Collapsed="true">
+    <Position X="14" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>c:\users\ajain\downloads\sdl\sdl2_mixer-2.0.1\include\sdl_mixer.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="SDL_Window" Collapsed="true">
+    <Position X="16" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>c:\users\ajain\downloads\sdl\sdl2-2.0.5\include\sdl_video.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="SDL_Event" Collapsed="true">
+    <Position X="16.5" Y="8.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>c:\users\ajain\downloads\sdl\sdl2-2.0.5\include\sdl_events.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

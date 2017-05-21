@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A65EBDA5-9453-41AA-B436-378704751081}</ProjectGuid>
+    <RootNamespace>Maybe_Final_SDL</RootNamespace>
+    <ProjectName>Orboid</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Users\ABHi\Downloads\Compressed\SDL\SDL_NEW\SDL2_image-2.0.1\include;C:\Users\ABHi\Downloads\Compressed\SDL\SDL_NEW\SDL2_mixer-2.0.1\include;C:\Users\ABHi\Downloads\Compressed\SDL\SDL_NEW\SDL2_ttf-2.0.14\include;C:\Users\ABHi\Downloads\Compressed\SDL\SDL_NEW\SDL2-2.0.5\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\ABHi\Downloads\Compressed\SDL\SDL_NEW\SDL2_image-2.0.1\lib\x86;C:\Users\ABHi\Downloads\Compressed\SDL\SDL_NEW\SDL2_mixer-2.0.1\lib\x86;C:\Users\ABHi\Downloads\Compressed\SDL\SDL_NEW\SDL2_ttf-2.0.14\lib\x86;C:\Users\ABHi\Downloads\Compressed\SDL\SDL_NEW\SDL2-2.0.5\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Dot.cpp" />
+    <ClCompile Include="LTexture.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Paddle.cpp" />
+    <ClCompile Include="PaddleManager.cpp" />
+    <ClCompile Include="Particle.cpp" />
+    <ClCompile Include="ShowMenuImage.cpp" />
+    <ClCompile Include="Source.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\ProjectSDL\ProjectSDL\bg.png" />
+    <Image Include="..\..\ProjectSDL\ProjectSDL\blue_p.bmp" />
+    <Image Include="..\..\ProjectSDL\ProjectSDL\difficultyscreen.png" />
+    <Image Include="..\..\ProjectSDL\ProjectSDL\dot_p.bmp" />
+    <Image Include="..\..\ProjectSDL\ProjectSDL\final_image.png" />
+    <Image Include="..\..\ProjectSDL\ProjectSDL\green_p.bmp" />
+    <Image Include="..\..\ProjectSDL\ProjectSDL\paddle_blue.png" />
+    <Image Include="..\..\ProjectSDL\ProjectSDL\paddle_red.png" />
+    <Image Include="..\..\ProjectSDL\ProjectSDL\quit.png" />
+    <Image Include="..\..\ProjectSDL\ProjectSDL\red_p.bmp" />
+    <Image Include="..\..\ProjectSDL\ProjectSDL\shimmer_p.bmp" />
+    <Image Include="..\..\ProjectSDL\ProjectSDL\start.png" />
+    <Image Include="..\..\ProjectSDL\ProjectSDL\story_image.png" />
+    <Image Include="..\..\ProjectSDL\ProjectSDL\Title.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\..\ProjectSDL\ProjectSDL\beat.wav" />
+    <Media Include="..\..\ProjectSDL\ProjectSDL\beat_1.wav" />
+    <Media Include="..\..\ProjectSDL\ProjectSDL\high.wav" />
+    <Media Include="..\..\ProjectSDL\ProjectSDL\low.wav" />
+    <Media Include="..\..\ProjectSDL\ProjectSDL\medium.wav" />
+    <Media Include="..\..\ProjectSDL\ProjectSDL\scratch.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Dot.hpp" />
+    <ClInclude Include="LTexture.hpp" />
+    <ClInclude Include="Paddle.hpp" />
+    <ClInclude Include="PaddleManager.hpp" />
+    <ClInclude Include="Particle.hpp" />
+    <ClInclude Include="ShowMenuImage.hpp" />
+    <ClInclude Include="Source.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
